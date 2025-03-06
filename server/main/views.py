@@ -35,7 +35,7 @@ class ApplicationListCreateView(generics.ListCreateAPIView):
     queryset = Application.objects.all()
     serializer_class = ApplicationSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
-    filterset_fields = ["jobId", "userID"]
+    filterset_fields = ["jobId"]
     search_fields = ["resume"]
 
     permission_classes = [permissions.IsAuthenticated]
