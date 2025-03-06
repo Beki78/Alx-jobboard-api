@@ -34,4 +34,6 @@ class Application(models.Model):
   resume = models.CharField(max_length=1000)
   appliedAt = models.DateTimeField(auto_now_add=True)
   postedAt = models.DateTimeField(auto_now_add=True)
-  userID = models.ForeignKey(User, on_delete=models.CASCADE)
+  firstName = models.CharField(max_length=100)
+  lastName = models.CharField(max_length=100)
+  email = models.EmailField()

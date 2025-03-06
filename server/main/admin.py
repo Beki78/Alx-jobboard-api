@@ -17,6 +17,6 @@ class JobAdmin(admin.ModelAdmin):
 
 @admin.register(Application)
 class ApplicationAdmin(admin.ModelAdmin):
-    list_display = ("jobId", "userID", "appliedAt")
+    list_display = ("jobId","firstName","lastName","email", "appliedAt")
     search_fields = ("resume",)
     list_filter = ("appliedAt",)
