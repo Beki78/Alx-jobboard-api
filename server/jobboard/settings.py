@@ -157,6 +157,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5145",
     "http://localhost:3000",
     "http://localhost:3001",
+    "https://next-hire-project-nexus-interactive-job-board.vercel.app",
+    "https://next-hire-project-nexus-interactive-job-board.vercel.app/"
+    
 ]
 
 # Allow specific HTTP methods
